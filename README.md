@@ -4,9 +4,9 @@ Makes word lists and combines them into password lists.
 
 The idea is simple:
 - **Make lists** (`--months`, `--years`, ...) or use your own text files (one word per line)
-- **Combine them** with `-i` — you get every combination of all lists
+- **Combine them** with `-i` - you get every combination of all lists
 - **Add characters** with `-ch` — before, between or after the words
-- **Change case** with `--upper` / `--lower` — per list, however you want
+- **Change case** with `--upper` / `--lower` - per list, however you want
 
 Everything goes to the screen, or to a file with `-o`.
 
@@ -44,7 +44,7 @@ python3 Worder.py -ch "A" -i list1.txt -ch "B" -i list2.txt -ch "C" -o output.tx
 ```
 
 Case flags (`--upper`, `--upper-all`, `--lower`, `--lower-all`) change only the
-`-i` list that comes right after them — so every list can look different:
+`-i` list that comes right after them - so every list can look different:
 
 ```bash
 python3 Worder.py --upper -i list1.txt -o output.txt
@@ -60,7 +60,7 @@ python3 Worder.py --lower-all -i list1.txt -o output.txt
 # tokio, test, user, ...
 ```
 
-Mix everything together — case, characters, as many lists as you want:
+Mix everything together - case, characters, as many lists as you want:
 
 ```bash
 python3 Worder.py --upper-all -i Months.txt -ch "!" --lower -i Seasons.txt
@@ -85,7 +85,7 @@ python3 Worder.py --numbers 0-99 --pad 2 -o numbers.txt
 
 ---
 
-## Install permanently (Ubuntu) — use `worder` from anywhere
+## Install permanently (Ubuntu) - use `worder` from anywhere
 
 ```bash
 mkdir -p ~/.local/bin
